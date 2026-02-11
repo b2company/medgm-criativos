@@ -16,9 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <head>
-        <link href="https://fonts.cdnfonts.com/css/termina" rel="stylesheet" />
-      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

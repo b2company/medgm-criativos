@@ -14,7 +14,7 @@ const config: Config = {
         dark: "#1A1A1A",
       },
       fontFamily: {
-        termina: ["var(--font-termina)"],
+        heading: ["var(--font-heading)"],
         inter: ["var(--font-inter)"],
       },
     },

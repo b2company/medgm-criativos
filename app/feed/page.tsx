@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Feed() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       <div
         className="relative overflow-hidden"
         style={{
@@ -13,52 +13,52 @@ export default function Feed() {
       >
         {/* Elementos geométricos decorativos */}
         <div
-          className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-10"
+          className="absolute -top-32 -right-32 w-96 h-96 rounded-full opacity-5"
           style={{
             background: "radial-gradient(circle, #FFEBC3 0%, transparent 70%)",
-            transform: "translate(30%, -30%)",
           }}
         />
         <div
-          className="absolute bottom-0 left-0 w-96 h-96 opacity-5"
+          className="absolute -bottom-40 -left-40 w-[500px] h-[500px] opacity-5"
           style={{
             background: "linear-gradient(135deg, #CAAA82 0%, transparent 70%)",
-            transform: "translate(-40%, 40%) rotate(45deg)",
+            transform: "rotate(45deg)",
           }}
         />
 
-        {/* Linhas geométricas */}
+        {/* Linhas geométricas sutis */}
         <div
-          className="absolute top-1/3 left-0 right-0 h-px opacity-20"
+          className="absolute top-1/4 left-0 right-0 h-[1px] opacity-10"
           style={{ backgroundColor: "#CAAA82" }}
         />
         <div
-          className="absolute top-2/3 left-0 right-0 h-px opacity-20"
+          className="absolute bottom-1/4 left-0 right-0 h-[1px] opacity-10"
           style={{ backgroundColor: "#FFEBC3" }}
         />
 
         {/* Container de conteúdo */}
-        <div className="relative z-10 flex flex-col h-full p-16">
+        <div className="relative z-10 flex flex-col h-full px-20 py-16">
           {/* Logo */}
-          <div className="mb-12">
+          <div className="mb-16">
             <Image
               src="/logo.png"
               alt="MedGM"
-              width={180}
-              height={40}
+              width={200}
+              height={45}
               className="object-contain"
+              style={{ height: 'auto' }}
             />
           </div>
 
           {/* Headline */}
           <h1
-            className="mb-8 leading-tight"
+            className="mb-10 leading-[1.15]"
             style={{
-              fontFamily: "Termina, sans-serif",
-              fontSize: "52px",
-              fontWeight: 400,
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: "56px",
+              fontWeight: 700,
               color: "#FFEBC3",
-              lineHeight: "1.2",
+              letterSpacing: "-0.02em",
             }}
           >
             Médico que fatura R$ 200 mil por mês não é melhor que você.
@@ -66,13 +66,13 @@ export default function Feed() {
 
           {/* Corpo do texto */}
           <p
-            className="mb-auto"
+            className="mb-auto leading-relaxed"
             style={{
-              fontFamily: "Inter, sans-serif",
-              fontSize: "28px",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "26px",
               fontWeight: 400,
               color: "#CAAA82",
-              lineHeight: "1.5",
+              lineHeight: "1.6",
             }}
           >
             Ele não estudou mais. Não é mais inteligente. Ele só tem uma
@@ -82,18 +82,19 @@ export default function Feed() {
 
           {/* CTA */}
           <div
-            className="mt-8 px-8 py-6 text-center"
+            className="mt-12 px-10 py-7 text-center"
             style={{
               backgroundColor: "#FFEBC3",
-              borderRadius: "8px",
+              borderRadius: "12px",
             }}
           >
             <p
               style={{
-                fontFamily: "Inter, sans-serif",
-                fontSize: "24px",
-                fontWeight: 500,
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "22px",
+                fontWeight: 600,
                 color: "#1A1A1A",
+                letterSpacing: "-0.01em",
               }}
             >
               Clique em saiba mais e receba um diagnóstico.
