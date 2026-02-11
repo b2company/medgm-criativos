@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Termina';
+  src: url('https://fonts.cdnfonts.com/css/termina') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --font-termina: 'Termina', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
