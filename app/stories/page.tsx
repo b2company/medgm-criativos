@@ -67,8 +67,8 @@ export default function Stories() {
             </h1>
 
             {/* Corpo do texto */}
-            <p
-              className="mb-20 leading-relaxed"
+            <div
+              className="mb-20 space-y-5"
               style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: "32px",
@@ -77,10 +77,11 @@ export default function Stories() {
                 lineHeight: "1.6",
               }}
             >
-              Ele não estudou mais. Não é mais inteligente. Ele só tem uma
-              estrutura que transforma os mesmos pacientes em 3x mais
-              faturamento. E não é nada clínico.
-            </p>
+              <p>Ele não estudou mais.</p>
+              <p>Não é mais inteligente.</p>
+              <p>Ele só tem uma estrutura que transforma os mesmos pacientes em 3x mais faturamento.</p>
+              <p>E não é nada clínico.</p>
+            </div>
           </div>
 
           {/* CTA */}

@@ -65,8 +65,8 @@ export default function Feed() {
           </h1>
 
           {/* Corpo do texto */}
-          <p
-            className="mb-auto leading-relaxed"
+          <div
+            className="mb-auto space-y-4"
             style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: "26px",
@@ -75,10 +75,11 @@ export default function Feed() {
               lineHeight: "1.6",
             }}
           >
-            Ele não estudou mais. Não é mais inteligente. Ele só tem uma
-            estrutura que transforma os mesmos pacientes em 3x mais faturamento.
-            E não é nada clínico.
-          </p>
+            <p>Ele não estudou mais.</p>
+            <p>Não é mais inteligente.</p>
+            <p>Ele só tem uma estrutura que transforma os mesmos pacientes em 3x mais faturamento.</p>
+            <p>E não é nada clínico.</p>
+          </div>
 
           {/* CTA */}
           <div
